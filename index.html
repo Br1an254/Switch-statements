@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Switch Statements</h1>
+    <p id="Demo"></p>
+    <script>
+         let day = prompt ("Enter day of the week");
+switch (day) {
+    case "monday":
+    case "tuesday":
+    case "wednesday":
+    case "thursday":
+    case "friday":
+        console.log(`${day} is a weekday`);
+        break;
+    case  "saturday":
+    case "sunday":
+        console.log(`${day} is a weekend`);
+        break;
+    default:
+        console.log("Invaild Input");
+}
+document.getElementById("Demo").innerHTML = "Today is" + day
+    </script>
+</body>
+</html>
